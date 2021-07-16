@@ -1,0 +1,15 @@
+                    _________ _______  _______  _______
+                    \__   __/(  ____ \(  ____ )(  ____ \
+                       ) (   | (    \/| (    )|| (    \/
+                       | |   | (__    | (____)|| (_____
+                       | |   |  __)   |     __)(_____  )
+                       | |   | (      | (\ (         ) |
+                    ___) (___| )      | ) \ \__/\____) |
+                    \_______/|/       |/   \__/\_______)
+
+                    ENSINO PUBLICO DE QUALIDADE. 2021
+                    Linguagem de programacao II
+                    Professor Alex dias
+                    Aluno Theo Alfonso Baptista
+
+

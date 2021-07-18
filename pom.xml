@@ -8,7 +8,7 @@
 		<version>2.5.2</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>br.com.theo.trabalho.ling-II</groupId>
+	<groupId>br.com.trabalho.ling-II</groupId>
 	<artifactId>sistema-ongs</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>sistema-ongs</name>

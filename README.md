@@ -3,12 +3,13 @@ O trabalho foi implementado usando as seguintes ferramentas abaixo:
 
 * Maven como gerenciador de dependências.
 * Java 11 LTS.
-* Spring boot como apliação de console e também necessário para usar o h2.
-* H2 database como banco de dados em memória.
+* Spring boot.
+* H2 database.
 
 # Getting Started
 
-Colocar como o professor deve importar o projeto no eclipse. E também como gerar um jar.
+* Para importar o projeto no Eclipse faça o donwload do zip do projeto, extraia o zip. Após isso, abra o Eclipse IDE,
+  clique em: files -> import -> Maven -> Existing Maven Projects -> Next -> Browse... -> pesquise a pasta extraída -> Finish.
 
 ### Documentação de referência
 Para futuras referências, favor considerar a documentação oficial das tecnologias usadas:

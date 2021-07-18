@@ -1,4 +1,6 @@
-package br.com.theo.trabalho.lingII.sistemaongs.ong;
+package br.com.trabalho.linguagem.sistema.ongs.ong;
+
+import br.com.trabalho.linguagem.sistema.ongs.compartilhado.Cidade;
 
 import java.time.LocalDate;
 
@@ -7,10 +9,10 @@ public class Publicacao {
     private String descricao;
     private final ONG ong;
     private final LocalDate dataDaAcao;
-    private final LocalDate cidadeDaAcao;
+    private final LocalDate dataDeRegistro = LocalDate.now();
+    private final Cidade cidadeDaAcao;
 
-    public Publicacao(String descricao, ONG ong, LocalDate dataDaAcao, LocalDate cidadeDaAcao) {
-        this.descricao = descricao;
+    public Publicacao(ONG ong, LocalDate dataDaAcao, Cidade cidadeDaAcao) {
         this.ong = ong;
         this.dataDaAcao = dataDaAcao;
         this.cidadeDaAcao = cidadeDaAcao;
@@ -28,7 +30,11 @@ public class Publicacao {
         return dataDaAcao;
     }
 
-    public LocalDate getCidadeDaAcao() {
+    public LocalDate getDataDeRegistro() {
+        return dataDeRegistro;
+    }
+
+    public Cidade getCidadeDaAcao() {
         return cidadeDaAcao;
     }
 

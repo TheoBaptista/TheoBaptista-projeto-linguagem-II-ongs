@@ -1,8 +1,9 @@
-package br.com.theo.trabalho.lingII.sistemaongs.ong;
+package br.com.trabalho.linguagem.sistema.ongs.ong;
 
-import br.com.theo.trabalho.lingII.sistemaongs.compartilhado.Causa;
-import br.com.theo.trabalho.lingII.sistemaongs.compartilhado.Endereco;
-import br.com.theo.trabalho.lingII.sistemaongs.compartilhado.Usuario;
+import br.com.trabalho.linguagem.sistema.ongs.compartilhado.Causa;
+import br.com.trabalho.linguagem.sistema.ongs.compartilhado.Endereco;
+import br.com.trabalho.linguagem.sistema.ongs.usuario.Perfil;
+import br.com.trabalho.linguagem.sistema.ongs.usuario.Usuario;
 
 import java.util.List;
 
@@ -14,12 +15,12 @@ public class ONG implements Usuario {
     private final String email;
     private final Endereco endereco;
     private final Causa causa;
-    private String gestorNome;
+    private String gestor;
     private String telefone;
     private final List<Publicacao> publicacoes;
     private String senha;
 
-    public ONG(String nome, String email, Endereco endereco, Causa causa, List<Publicacao> publicacoes,String senha) {
+    public ONG(String nome, String email, Endereco endereco, Causa causa, List<Publicacao> publicacoes, String senha) {
         this.nome = nome;
         this.email = email;
         this.endereco = endereco;
@@ -52,8 +53,8 @@ public class ONG implements Usuario {
         return causa;
     }
 
-    public String getGestorNome() {
-        return gestorNome;
+    public String getGestor() {
+        return gestor;
     }
 
     public String getTelefone() {
@@ -72,8 +73,8 @@ public class ONG implements Usuario {
         this.url = url;
     }
 
-    public void setGestorNome(String gestorNome) {
-        this.gestorNome = gestorNome;
+    public void setGestor(String gestor) {
+        this.gestor = gestor;
     }
 
     public void setTelefone(String telefone) {
@@ -88,5 +89,10 @@ public class ONG implements Usuario {
     @Override
     public String getLogin() {
         return this.email;
+    }
+
+    @Override
+    public Perfil getPerfil() {
+        return Perfil.ONG;
     }
 }

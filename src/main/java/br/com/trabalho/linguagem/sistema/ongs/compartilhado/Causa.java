@@ -1,10 +1,9 @@
-package br.com.theo.trabalho.lingII.sistemaongs.compartilhado;
+package br.com.trabalho.linguagem.sistema.ongs.compartilhado;
 
-public class Estado {
-
+public class Causa {
     private final String nome;
 
-    public Estado(String nome) {
+    public Causa(String nome) {
         this.nome = nome;
     }
 

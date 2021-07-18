@@ -1,8 +1,9 @@
-package br.com.theo.trabalho.lingII.sistemaongs.voluntario;
+package br.com.trabalho.linguagem.sistema.ongs.voluntario;
 
-import br.com.theo.trabalho.lingII.sistemaongs.compartilhado.Causa;
-import br.com.theo.trabalho.lingII.sistemaongs.compartilhado.Endereco;
-import br.com.theo.trabalho.lingII.sistemaongs.compartilhado.Usuario;
+import br.com.trabalho.linguagem.sistema.ongs.compartilhado.Causa;
+import br.com.trabalho.linguagem.sistema.ongs.compartilhado.Endereco;
+import br.com.trabalho.linguagem.sistema.ongs.usuario.Perfil;
+import br.com.trabalho.linguagem.sistema.ongs.usuario.Usuario;
 
 import java.util.List;
 
@@ -21,6 +22,7 @@ public class Voluntario implements Usuario {
         this.endereco = endereco;
         this.causasDeInteresse = causasDeInteresse;
         this.telefone = telefone;
+        this.senha = senha;
     }
 
     public String getNome() {
@@ -69,6 +71,11 @@ public class Voluntario implements Usuario {
     @Override
     public String getLogin() {
         return this.email;
+    }
+
+    @Override
+    public Perfil getPerfil() {
+        return Perfil.VOLUNTARIO;
     }
 
 }

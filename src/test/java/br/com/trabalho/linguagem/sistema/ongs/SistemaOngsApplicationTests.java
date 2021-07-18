@@ -1,4 +1,4 @@
-package br.com.theo.trabalho.lingII.sistemaongs;
+package br.com.trabalho.linguagem.sistema.ongs;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

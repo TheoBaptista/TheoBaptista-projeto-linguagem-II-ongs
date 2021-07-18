@@ -1,4 +1,4 @@
-package br.com.theo.trabalho.lingII.sistemaongs.compartilhado;
+package br.com.trabalho.linguagem.sistema.ongs.compartilhado;
 
 public class Cidade {
 
